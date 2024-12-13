@@ -452,7 +452,7 @@
             
     <!-- Projects End -->
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -661,9 +661,9 @@
                 Calculate
                 <i class="fas fa-arrow-right"></i>
             </button>
-        </div>
+        </div> -->
 
-        <div id="solarCalculatorResults" class="results-grid">
+        <!-- <div id="solarCalculatorResults" class="results-grid">
             <div class="result-card system-size">
                 <div class="icon-circle">
                     <i class="fas fa-solar-panel"></i>
@@ -696,32 +696,32 @@
                 <p class="result-value">₹<span id="lifetimeSavings">-</span></p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script>
-        function calculateSolar() {
-            const billAmount = parseFloat(document.getElementById('electricityBill').value);
+        // function calculateSolar() {
+        //     const billAmount = parseFloat(document.getElementById('electricityBill').value);
             
-            if (!billAmount || billAmount <= 0) {
-                alert('Please enter a valid bill amount');
-                return;
-            }
+        //     if (!billAmount || billAmount <= 0) {
+        //         alert('Please enter a valid bill amount');
+        //         return;
+        //     }
 
-            // Calculate values
-            const systemSize = (billAmount * 0.0067).toFixed(1);
-            const areaRequired = Math.round(billAmount * 0.067);
-            const estimatedPrice = Math.round(billAmount * 1000);
-            const lifetimeSavings = billAmount * 12 * 25;
+        //     // Calculate values
+        //     const systemSize = (billAmount * 0.0067).toFixed(1);
+        //     const areaRequired = Math.round(billAmount * 0.067);
+        //     const estimatedPrice = Math.round(billAmount * 1000);
+        //     const lifetimeSavings = billAmount * 12 * 25;
 
-            // Update display
-            document.getElementById('systemSize').textContent = `${systemSize} kW`;
-            document.getElementById('areaRequired').textContent = `${areaRequired} Sqft`;
-            document.getElementById('estimatedPrice').textContent = estimatedPrice.toLocaleString();
-            document.getElementById('lifetimeSavings').textContent = lifetimeSavings.toLocaleString();
+        //     // Update display
+        //     document.getElementById('systemSize').textContent = `${systemSize} kW`;
+        //     document.getElementById('areaRequired').textContent = `${areaRequired} Sqft`;
+        //     document.getElementById('estimatedPrice').textContent = estimatedPrice.toLocaleString();
+        //     document.getElementById('lifetimeSavings').textContent = lifetimeSavings.toLocaleString();
 
-            // Show results
-            document.getElementById('solarCalculatorResults').style.display = 'grid';
-        }
+        //     // Show results
+        //     document.getElementById('solarCalculatorResults').style.display = 'grid';
+        // }
 
         // Show the modal on page load
 window.onload = function () {
